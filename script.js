@@ -22,7 +22,7 @@ const checkWin = ()=>{
     ]
     wins.forEach(e=>{
         if((boxtexts[e[0]].innerText===boxtexts[e[1]].innerText) && (boxtexts[e[1]].innerText===boxtexts[e[2]].innerText) && (boxtexts[e[1]].innerText!=='')){
-            document.querySelector('.info').innerText=boxtexts[e[0]].innerText + " won"
+            document.querySelector('.info').innerText=boxtexts[e[0]].innerText + " has won"
             gameover=true;
             document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width="400px";
             // document.querySelector(".line").style.width="20vw";
